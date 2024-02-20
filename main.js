@@ -7,6 +7,7 @@ const bodyElement = document.body;
 const navbar = document.getElementById('navbar');
 let isScrollingDown = false;
 
+
 window.addEventListener('scroll', () => {
     const rect = divElement.getBoundingClientRect();
     const divTopOffset = rect.top;
