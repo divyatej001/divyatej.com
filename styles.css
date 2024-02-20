@@ -5,27 +5,34 @@ body{
     background-position: center;
     height: 100vh;
     color: white;
+    margin: 0;
     /*transition: background-color 1s ease; /*Transition for the background color change */ 
 }
 .mainhead {
-    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
+    top: 0;
+    width: 100%;
     background-color:transparent;  
     display: flex;
     color: white;
     flex-grow: 1;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
+    align-items: center;
 }
-
 .fa-brands{
     font-size:xx-large;
     padding-right: 20px;
-    padding-top: 20px;
 }
 .left-head{
     font-size: x-large;
     font-family: 'Cedarville Cursive';
+    padding-left: 20px;
 }
+
 .flexboxmain{
     min-height: 300px;
     display: flex;
@@ -85,5 +92,9 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-right: 30px;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
