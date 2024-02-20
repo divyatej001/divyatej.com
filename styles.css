@@ -1,0 +1,89 @@
+body{
+    background-size: cover;
+    background-image: url('images/bgsky.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    /*transition: background-color 1s ease; /*Transition for the background color change */ 
+}
+.mainhead {
+    padding: 15px;
+    background-color:transparent;  
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    font-size:xx-large;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.left-head{
+    font-size: x-large;
+    font-family: 'Cedarville Cursive';
+}
+.flexboxmain{
+    min-height: 300px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.contact-me{
+    border-radius: 50%;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/moon2.jpg');
+    background-size: 110%;
+    background-position: center;
+    transition: all 1s;
+}
+.contact-me:hover{
+    transform: scale(3) translate(-25px) rotate(1turn);
+}
+.circle{
+    padding-right: 50px;
+}
+.maintext{
+    padding-left: 50px;
+    font-size: 5vw;
+    line-height: 30px;
+}
+.tex{
+    display: inline-block;
+    position: relative;
+}
+.tex::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transition: 0.5s;
+}
+.tex:hover::before{
+    width: 0;
+}
+.rowtwo{
+    margin: 50px;
+    padding-top: 20%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+.maintexttwo{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 30px;
+}
+
+
